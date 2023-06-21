@@ -7,21 +7,27 @@ using System.Threading.Tasks;
 
 namespace InterfacePractice
 {
-    public interface IAnimal
+    public interface IBird
     {
         void eat();
         void sleep();
         void fly();
+    }
+
+    public interface IHuman
+    {
+        void eat();
+        void sleep();
         void swim();
     }
 
-    
+
     internal class Program
     {
         static void Main(string[] args)
         {
             Human human = new Human();
-            human.fly();
+            human.eat();
 
         }
     }
